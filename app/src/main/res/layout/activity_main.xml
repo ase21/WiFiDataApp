@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/TRANSPORT_WIFI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="TRANSPORT_WIFI"
+        app:layout_constraintBottom_toTopOf="@+id/TRANSPORT_CELLULAR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <CheckBox
+        android:id="@+id/TRANSPORT_CELLULAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="TRANSPORT_CELLULAR"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_CAPTIVE_PORTAL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TRANSPORT_WIFI"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_CAPTIVE_PORTAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_CAPTIVE_PORTAL"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_INTERNET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TRANSPORT_CELLULAR"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_INTERNET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_INTERNET"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_NOT_METERED"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_CAPTIVE_PORTAL" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_NOT_METERED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_NOT_METERED"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_WIFI_P2P"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_INTERNET" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_NOT_RESTRICTED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_NOT_RESTRICTED"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_NOT_ROAMING"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_VALIDATED" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_NOT_ROAMING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_NOT_ROAMING"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_NOT_SUSPENDED"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_NOT_RESTRICTED" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_NOT_SUSPENDED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_NOT_SUSPENDED"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_TEMPORARILY_NOT_METERED"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_NOT_ROAMING" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_NOT_VPN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_NOT_VPN"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_TRUSTED"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_TEMPORARILY_NOT_METERED" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_TEMPORARILY_NOT_METERED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_TEMPORARILY_NOT_METERED"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_NOT_VPN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_NOT_SUSPENDED" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_TRUSTED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_TRUSTED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_NOT_VPN" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_VALIDATED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_VALIDATED"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_NOT_RESTRICTED"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_WIFI_P2P" />
+
+    <CheckBox
+        android:id="@+id/NET_CAPABILITY_WIFI_P2P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="NET_CAPABILITY_WIFI_P2P"
+        app:layout_constraintBottom_toTopOf="@+id/NET_CAPABILITY_VALIDATED"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NET_CAPABILITY_NOT_METERED" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
